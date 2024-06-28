@@ -1,0 +1,82 @@
+:root {
+  --main-linear-graident: linear-gradient(to right, #fc4a1a, #f7b733);
+  --bg-color: #27323e;
+  --white-color: #fff;
+  --dark-color: #212529;
+  --main-color: #fc4a1a;
+  --black-color: #000;
+}
+ul {
+  list-style: none;
+}
+.img {
+  transform: rotate(45deg);
+  width: 300px;
+  height: 300px;
+}
+
+@media (max-width: 767px) {
+  .img {
+    width: 250px;
+    height: 250px;
+  }
+}
+.box {
+  background: var(--main-linear-graident);
+}
+
+.testimonials {
+  background-color: var(--bg-color);
+}
+.testimonials .card {
+  border-radius: 0;
+  padding: 20px;
+  background-color: #d9d5d5;
+}
+
+.example-projects {
+  background-color: var(--dark-color);
+}
+.example-projects .project-title {
+  color: #ccd6f6;
+}
+.example-projects .project-subtitle {
+  color: var(--main-color);
+}
+.example-projects .box {
+  color: #ccd6f6;
+  background-color: #27323eb8;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+.example-projects .image img {
+  border-top: 25px solid var(--main-color);
+  border-left: 25px solid var(--main-color);
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 10px 10px 300px 90px var(--main-color);
+}
+.example-projects .reversed {
+  margin-top: 215px;
+  text-align: right;
+}
+.example-projects .reversed .image img {
+  border-top: 25px solid var(--main-color);
+  border-right: 25px solid var(--main-color);
+  border-left: 0;
+}
+
+.landing,
+.services,
+.blog,
+.testimonials,
+.footer {
+  background-color: var(--bg-color);
+}
+.footer {
+  overflow: hidden;
+}
+.footer input {
+  background-color: var(--bg-color);
+}
