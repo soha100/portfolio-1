@@ -9,19 +9,30 @@
 ul {
   list-style: none;
 }
+.landing .std {
+  background: -webkit-linear-gradient(#fc4a1a, #f7b733);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.landing .toggle {
+  background: var(--main-linear-graident);
+}
+.botton {
+  background: var(--main-linear-graident);
+}
 .img {
   transform: rotate(45deg);
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 767px) {
   .img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
 }
-.box {
+.contact .box {
   background: var(--main-linear-graident);
 }
 
@@ -36,6 +47,7 @@ ul {
 
 .example-projects {
   background-color: var(--dark-color);
+  overflow: hidden;
 }
 .example-projects .project-title {
   color: #ccd6f6;
@@ -49,13 +61,15 @@ ul {
   padding: 30px;
   border-radius: 15px;
   margin-top: 40px;
+  position: relative;
+  z-index: 100;
 }
 .example-projects .image img {
   border-top: 25px solid var(--main-color);
   border-left: 25px solid var(--main-color);
   border-radius: 5px;
   position: relative;
-  box-shadow: 10px 10px 300px 90px var(--main-color);
+  box-shadow: 0px 0px 300px 30px #f7b733;
 }
 .example-projects .reversed {
   margin-top: 215px;
